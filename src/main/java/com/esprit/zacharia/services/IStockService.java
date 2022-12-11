@@ -17,4 +17,5 @@ public interface IStockService {
 
     void assignProduitToStock(Long idProduit, Long idStock);
 
+    String retriveStatusStock();
 }

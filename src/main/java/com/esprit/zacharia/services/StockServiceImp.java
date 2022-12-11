@@ -48,6 +48,17 @@ public Stock addStock(Stock s){
 
         }
     }
+    @Override
+    public String retriveStatusStock() {
+
+        List<Stock> stocks = stockRepository.retriveStatusStock();
+        String m = "";
+        for(Stock stock: stocks){
+            String m1 = stock.getLibelleStock();
+            m+=","+m1;
+        }
+        return m;
+    }
 
 
 }
